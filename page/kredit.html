@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/kredit.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a
+          class="navbar-brand"
+          href="https://cdn-2.tstatic.net/ternate/foto/bank/images/kwon-yuli1.jpg"
+        >
+          <img src="/assets/iosLogo.png" alt="Logo" width="40" height="40" />
+          <span class="navbar-brand">Nadya Comel</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Kredit iPhone</h2>
+        <form id="kreditForm">
+          <div class="mb-3">
+            <label for="nama" class="form-label">Nama</label>
+            <input
+              type="text"
+              class="form-control"
+              id="namaPembeliInput"
+              placeholder="Masukkan nama Anda"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="nomer" class="form-label">Nomor Telepon</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="noHP"
+              placeholder="Masukkan nomor telepon Anda"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="selectedProduct" class="form-label"
+              >Produk iPhone</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="pilihJudulProduk"
+              readonly
+            />
+          </div>
+          <div class="mb-3">
+            <label for="hargaProduk" class="form-label">Besar Pinjaman</label>
+            <input
+              type="text"
+              class="form-control"
+              id="labelHarga"
+              readonly
+            />
+          </div>
+          <div class="mb-3">
+            <label for="bungaBulan" class="form-label">Bunga per Bulan</label>
+            <input
+              type="number"
+              class="form-control"
+              id="bungaRataRata"
+              placeholder="Masukkan bunga per bulan"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="downPayment" class="form-label">Uang Muka</label>
+            <input
+              type="number"
+              class="form-control"
+              id="uangMuka"
+              placeholder="Masukkan uang muka"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="cicilanLabel" class="form-label"
+              >Lama Cicilan (Bulan)</label
+            >
+            <input
+              type="number"
+              class="form-control"
+              id="lamaCicilan"
+              placeholder="Masukkan lama cicilan"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary" id="tombolSubmit">Submit</button>
+
+          <div id="hasilPerhitungan" class="mt-4 d-none">
+            <div>
+                <h4 class="text-xl-center">Informasi Pembeli</h4>
+                <p>Nama : <span id="namaPembeli"></span></p>
+                <p>NoTelp : <span id="noHpPembeli"></span></p>
+                <p>Produk : <span id="produkPembeli"></span></p>
+            </div>
+            <h4 class="text-center">Hasil Perhitungan</h4>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Angsuran ke-</th>
+                        <th>Pokok Pinjaman</th>
+                        <th>Bunga</th>
+                        <th>Total</th>
+                        <th>Sisa Pinjaman</th>
+                    </tr>
+                </thead>
+                <tbody id="installmentTableBody"></tbody>
+            </table>
+        </div>
+
+        </form>
+      </div>
+    </section>
+
+    
+  </body>
+</html>

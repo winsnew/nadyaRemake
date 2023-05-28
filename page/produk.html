@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Produk iPhone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/iosLogo.png" alt="Logo" width="40" height="40">
+                <span class="navbar-brand align-items-center">Nadya Comel</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5" style="padding-top: 40px;">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/assets/produk/12 pro.jpg" class="card-img-top" alt="iPhone 1">
+                    <div class="card-body">
+                        <h5 class="card-title">iPhone 12 Pro</h5>
+                        <p class="card-text">Kinerja Tangguh yang Didukung dengan Neural Engine</p>
+                        <p class="card-text">
+                            Harga: <span class="text-primary">Rp. 13.000.000</span>
+                        </p>
+                        
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#iphone12proModal">View Details</a>
+                        <a href="/page/kredit.html?product=iPhone 12 Pro&price=13000000" class="btn btn-primary btn-kredit-detail" data-product-title="iPhone 12 Pro">Kredit Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/assets/produk/ip 11.jpg" class="card-img-top" alt="iPhone 2">
+                    <div class="card-body">
+                        <h5 class="card-title">iPhone 11</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p class="card-text">
+                            Harga: <span class="text-primary">Rp. 11.500.000</span>
+                        </p>
+                        
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#iphone11Modal">View Details</a>
+                        <a href="/page/kredit.html?product=iPhone 11&price=11500000" class="btn btn-primary btn-kredit-detail">Kredit Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/assets/produk/ip se.jpg" style="height: 350px;" class="card-img-top" alt="iPhone 3">
+                    <div class="card-body">
+                        <h5 class="card-title">iPhone SE</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p class="card-text">
+                            Harga: <span class="text-primary">Rp. 8.800.000</span>
+                        </p>
+                        
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#iphoneSeModal">View Details</a>
+                        <a href="/page/kredit.html?product=iPhone SE" class="btn btn-primary btn-kredit-detail">Kredit Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="/assets/produk/12 pro.jpg" class="card-img-top" alt="iPhone 1">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 13 Pro</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p class="card-text">
+                                Harga: <span class="text-primary">Rp. 14.600.000</span>
+                            </p>
+                            
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#iphone13ProModal">View Details</a>
+                            <a href="/page/kredit.html?product=iPhone 13 Pro" class="btn btn-primary btn-kredit-detail">Kredit Details</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <!-- popupmodal untuk setiap produk iphone -->
+    <!-- 12pro -->
+    <div class="modal fade" id="iphone12proModal" tabindex="-1" aria-labelledby="iphone12proModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="iphone12proModalLabel">iPhone 12 Pro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Informasi mengenai iPhone 12 Pro.</p>
+                    <p>Display</p>
+                    <ul>
+                        <li>Super Retina XDR display</li>
+                        <li>6.1-inch (diagonal) all-screen OLED display</li>
+                        <li>2532-by-1170-pixel resolution at 460 ppi</li>
+                        <li>HDR display</li>
+                        <li>True Tone</li>
+                    </ul>
+                    <p>Chip</p>
+                    <ul>
+                        <li>A14 Bionic chip</li>
+                        <li>Next-generation Neural Engine</li>
+                    </ul>
+                    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi9ianbh5b_AhVkwjgGHRGSDkAQFnoECAkQAQ&url=https%3A%2F%2Ftranslate.google.com%2Ftranslate%3Fu%3Dhttps%3A%2F%2Fsupport.apple.com%2Fkb%2FSP831%26hl%3Did%26sl%3Den%26tl%3Did%26client%3Dsrp%26prev%3Dsearch&usg=AOvVaw3y-35CL8EdXzCYo_ev9G4_">Spesifikasi Lebih Tentang Iphone 12 pro</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Iphone 11 -->
+    <div class="modal fade" id="iphone11Modal" tabindex="-1" aria-labelledby="iphone11ModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="iphone11ModalLabel">iPhone 11</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Informasi mengenai iPhone 11.</p>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Iphone SE -->
+    <div class="modal fade" id="iphoneSeModal" tabindex="-1" aria-labelledby="iphoneSEModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="iphoneSEModalLabel">iPhone SE</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Informasi mengenai iPhone SE.</p>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Iphone 13 pro -->
+    <div class="modal fade" id="iphone13ProModal" tabindex="-1" aria-labelledby="iphoneSEModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="iphoneSEModalLabel">iPhone SE</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Informasi mengenai iPhone 13 Pro</p>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
